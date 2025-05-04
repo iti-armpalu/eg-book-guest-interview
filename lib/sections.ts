@@ -38,7 +38,7 @@ export const sections = [
   },
   {
     id: "04",
-    title: "You Are A Lighthouse in this Fog.",
+    title: "You Are A Lighthouse in this Fog",
     subheading:
       "",
     content:
@@ -50,7 +50,7 @@ export const sections = [
   },
   {
     id: '05',
-    title: 'Book your timeslot',
+    title: 'We value your time. Choose a time that works best and we’ll handle the rest.',
     subheading: '',
     content: '',
     image: '',

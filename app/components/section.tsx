@@ -1,7 +1,7 @@
 // components/Section.tsx
 import Image from "next/image";
 import styles from "./section.module.css";
-// import { PopupButton } from "react-calendly";
+import CalendlyPopup from "./calendlyPopup";
 
 interface SectionProps {
   id: string;
@@ -20,6 +20,7 @@ export default function Section({
   image,
   isCalendly,
 }: SectionProps) {
+
   return (
     <section className={`section ${styles.section}`}>
       <div className={styles.container}>
@@ -30,11 +31,7 @@ export default function Section({
 
         {isCalendly ? (
           <div className={styles.calendlyPopup}>
-            {/* <PopupButton
-              url="https://calendly.com/iti-armpalu/expert-interview?month=2025-05"
-              rootElement={document.body}
-              text="Book your interview slot"
-            /> */}
+            <CalendlyPopup />
           </div>
         ) : (
           <>
