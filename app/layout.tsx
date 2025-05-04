@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Josefin_Sans } from "next/font/google";
 import localFont from "next/font/local";
-import Script from "next/script";
 
 import "./globals.css";
 
@@ -51,10 +50,6 @@ export default function RootLayout({
         className={`${josefinSans.variable} ${fonsecaMedium.variable} ${fonsecaLight.variable} ${fonsecaThin.variable}`}
       >
         {children}
-        <Script
-          src="https://assets.calendly.com/assets/external/widget.js"
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );

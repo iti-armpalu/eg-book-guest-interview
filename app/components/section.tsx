@@ -1,7 +1,7 @@
 // components/Section.tsx
 import Image from "next/image";
 import styles from "./section.module.css";
-import { PopupButton, PopupWidget } from "react-calendly";
+import { PopupButton } from "react-calendly";
 
 interface SectionProps {
   id: string;
@@ -27,31 +27,9 @@ export default function Section({
           <span className={styles.sectionNumber}>{id}</span>
           <h1 className={styles.sectionTitle}>{title}</h1>
         </div>
-        {/* <div className={styles.imageWrapper}>
-          <Image
-            src={image}
-            alt={title}
-            width={1000}
-            height={600}
-            className={styles.image}
-            priority
-          />
-        </div>
-        <h3 className={styles.subheading}>{subheading}</h3>
-        <p className={styles.content}>{content}</p> */}
 
         {isCalendly ? (
           <div className={styles.calendlyPopup}>
-            {/* <button
-              className={styles.calendlyButton}
-              onClick={() =>
-                window.Calendly?.initPopupWidget({
-                  url: "https://calendly.com/iti-armpalu/expert-interview?month=2025-05",
-                })
-              }
-            >
-              Book your interview slot
-            </button> */}
             <PopupButton
               url="https://calendly.com/iti-armpalu/expert-interview?month=2025-05"
               rootElement={document.body}
