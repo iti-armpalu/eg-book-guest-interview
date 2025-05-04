@@ -35,6 +35,7 @@ a {
 h1, h3 {
   font-family: var(--font-fonseca-medium), sans-serif;
   font-size: 2rem;
+  line-height: 1.2;
 }
 
 span {

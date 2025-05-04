@@ -27,7 +27,6 @@
   font-weight: 400;
   line-height: 1.2;
   margin: 0;
-  margin-top: 3rem;
 }
 
 .accent {
@@ -37,7 +36,7 @@
 }
 
 .cta {
-  font-size: 1.525rem;
+  font-size: 1.425rem;
   opacity: 0.7;
   max-width: 400px;
 }
@@ -52,5 +51,12 @@
 
 .arrow svg + svg {
   margin-top: -25px; /* brings second arrow closer to the first */
+}
+
+/* Mobile-first media queries */
+@media (min-width: 768px) {
+  .title {
+    margin-top: 10rem;
+  }
 }
 

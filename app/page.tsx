@@ -47,20 +47,18 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div ref={containerRef} className={styles.container}>
       <Hero />
-      <div ref={containerRef}>
-        {sections.map((section, index) => (
-          <Section
-            key={index}
-            id={section.id}
-            title={section.title}
-            subheading={section.subheading}
-            content={section.content}
-            image={section.image}
-          />
-        ))}
-      </div>
+      {sections.map((section, index) => (
+        <Section
+          key={index}
+          id={section.id}
+          title={section.title}
+          subheading={section.subheading}
+          content={section.content}
+          image={section.image}
+        />
+      ))}
     </div>
   );
 }
