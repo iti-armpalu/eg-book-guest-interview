@@ -57,6 +57,7 @@ export default function Home() {
           subheading={section.subheading}
           content={section.content}
           image={section.image}
+          isCalendly={section.isCalendly}
         />
       ))}
     </div>

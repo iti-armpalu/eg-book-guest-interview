@@ -59,3 +59,31 @@
   font-size: 1.125rem;
   line-height: 1.2;
 }
+
+/* .calendlyEmbed {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+}  */
+
+.calendlyPopup {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.calendlyButton {
+  padding: 1rem 2rem;
+  background-color: var(--text-dark);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calendlyButton:hover {
+  background-color: #333;
+}

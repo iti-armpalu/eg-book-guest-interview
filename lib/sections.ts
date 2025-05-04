@@ -10,6 +10,7 @@ export const sections = [
       image: "/adoption-curve-graph.jpg",
     bgColorVar: "--color-0",
     textColorVar: "--text-dark",
+    isCalendly: false,
   },
   {
     id: "02",
@@ -21,6 +22,7 @@ export const sections = [
     image: "/j-curve-graph.jpg",
     bgColorVar: "--color-1",
     textColorVar: "--text-dark",
+    isCalendly: false,
   },
   {
     id: "03",
@@ -32,16 +34,29 @@ export const sections = [
     image: "/empathy-gradient-graph.jpg",
     bgColorVar: "--color-2",
     textColorVar: "--text-light",
+    isCalendly: false,
   },
   {
     id: "04",
-    title: "The Book We’re Writing Together",
+    title: "You Are A Lighthouse in this Fog.",
     subheading:
-      "You Are A Lighthouse in this Fog.",
+      "",
     content:
       "With all the information and misinformation going on, no one knows who to trust. We trust you, so we want to interview you as part of a chapter in the book that will teach everyone how to apply AI without needing millions in investment.",
     image: "/book-cover-graph.jpg",
     bgColorVar: "--color-3",
     textColorVar: "--text-light",
+    isCalendly: false,
   },
+  {
+    id: '05',
+    title: 'Book your timeslot',
+    subheading: '',
+    content: '',
+    image: '',
+    bgColorVar: '--color-0', // or a distinct background
+    textColorVar: '--text-dark',
+    isCalendly: true, // new flag to check for special rendering
+  }
+  
 ];
