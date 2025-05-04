@@ -1,0 +1,56 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+  position: relative;
+  background-color: var(--color-2); /* or a neutral bg */
+  color: var(--text-light); /* or override directly */
+  text-align: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  height: 100%;
+  max-width: 600px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  margin-top: 3rem;
+}
+
+.accent {
+  font-weight: 700;
+  font-size: 4rem;
+  display: block;
+}
+
+.cta {
+  font-size: 1.525rem;
+  opacity: 0.7;
+  max-width: 400px;
+}
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0;
+  opacity: 0.7;
+}
+
+.arrow svg + svg {
+  margin-top: -25px; /* brings second arrow closer to the first */
+}
+

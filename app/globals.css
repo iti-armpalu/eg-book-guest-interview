@@ -1,0 +1,42 @@
+:root {
+  --color-0: #fcf2dd;
+  --color-1: #6cac9f;
+  --color-2: #fc7234;
+  --color-3: #16545e;
+
+  --text-light: #fcf2dd;
+  --text-dark: #103236;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  transition: background-color 0.5s ease;
+  font-family: var(--font-josefinSans);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h3 {
+  font-family: var(--font-fonseca-medium), sans-serif;
+  font-size: 2rem;
+}
+
+span {
+  font-family: var(--font-fonseca-medium), sans-serif;
+}
