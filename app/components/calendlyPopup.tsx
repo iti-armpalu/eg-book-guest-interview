@@ -6,7 +6,7 @@ import styles from "./section.module.css";
 
 export default function CalendlyPopup() {
   const [isClient, setIsClient] = useState(false);
-  // const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_ALEX_URL ?? '';
+  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_ALEX_URL ?? "https://calendly.com/d/cndm-qj6-p3s/dr-connock-roy-armale";
 
 
   useEffect(() => {
@@ -18,7 +18,7 @@ export default function CalendlyPopup() {
 
   return (
     <PopupButton
-      url="https://calendly.com/d/cndm-qj6-p3s/dr-connock-roy-armale"
+      url={calendlyUrl}
       rootElement={document.body}
       text="Book your interview slot"
       className={styles.calendlyButton}
