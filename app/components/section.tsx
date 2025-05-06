@@ -26,18 +26,18 @@ export default function Section({
         <div className={styles.heading}>
           <span className={styles.sectionNumber}>
             {id}
-            <span className={styles.sectionTotal}>
-              / 05
-            </span>
+            <span className={styles.sectionTotal}>/ 05</span>
           </span>
           <h1 className={styles.sectionTitle}>{title}</h1>
-          {content && <p className={styles.content}>{content}</p>}
         </div>
 
         {isCalendly ? (
-          <div className={styles.calendlyPopup}>
-            <CalendlyPopup />
-          </div>
+          <>
+            {content && <p className={styles.content}>{content}</p>}
+            <div className={styles.calendlyPopup}>
+              <CalendlyPopup />
+            </div>
+          </>
         ) : (
           <>
             {image && (
