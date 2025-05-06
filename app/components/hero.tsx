@@ -11,8 +11,10 @@ export default function Hero() {
         <p className={styles.cta}>
           Here’s why your contribution is is not just important to us, it’s
           important to a lot of people that risk being left behind by AI
+          <span className={styles.info}>
+            The journey ahead has 5 short sections and will only take a few minutes.
+          </span>
           <span className={styles.arrow}>
-           
           <svg
             width="36"
             height="36"

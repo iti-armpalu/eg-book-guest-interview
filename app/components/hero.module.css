@@ -41,6 +41,13 @@
   max-width: 400px;
 }
 
+.info {
+  display: block;
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+
 .arrow {
   display: flex;
   flex-direction: column;
