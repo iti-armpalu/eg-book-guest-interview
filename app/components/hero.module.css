@@ -66,7 +66,7 @@
 }
 
 .arrow svg + svg {
-  margin-top: -25px; /* brings second arrow closer to the first */
+  margin-top: -25px;
 }
 
 @media (min-width: 768px) {
