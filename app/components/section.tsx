@@ -26,17 +26,33 @@ export default function Section({
         <div className={styles.heading}>
           <span className={styles.sectionNumber}>
             {id}
-            <span className={styles.sectionTotal}>
-              / 05
-            </span>
+            <span className={styles.sectionTotal}>/ 05</span>
           </span>
           <h1 className={styles.sectionTitle}>{title}</h1>
         </div>
 
         {isCalendly ? (
-          <div className={styles.calendlyPopup}>
-            <CalendlyPopup />
-          </div>
+          <>
+            {content && <p className={styles.content}>{content}</p>}
+            <div className={styles.calendlyPopup}>
+              <CalendlyPopup />
+            </div>
+            <form
+              action="https://formspree.io/f/xnnddyrp"
+              method="POST"
+              className={styles.anotherDayForm}
+            >
+              <input type="hidden" name="guest" value="Aude" />
+              <input
+                type="hidden"
+                name="note"
+                value="Clicked 'Another Day' button"
+              />
+              <button type="submit" className={styles.anotherDayButton}>
+                Another day
+              </button>
+            </form>
+          </>
         ) : (
           <>
             {image && (

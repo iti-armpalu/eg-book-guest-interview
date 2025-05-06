@@ -4,7 +4,7 @@ export const sections = [
   {
     id: "01",
     title: "More Inequality?",
-    subheading: "New tech brings progress, but the rich progress first.",
+    subheading: "New tech brings progress, but the rich progress first",
     content:
       "Ever major technology, from the plough to the railroad to electricity, to AI, increases the gap between the rich and the poor.",
       image: "/adoption-curve-graph.jpg",
@@ -52,7 +52,7 @@ export const sections = [
     id: '05',
     title: 'We value your time. Choose a time that works best and we’ll handle the rest.',
     // title: 'I will be in Vevey with your team on the 12th, if you are available please pick a time. Otherwise, please pick "Another Day" and I will follow up with you',
-    content: '',
+    content: 'I’ll be in Vevey with your team on the 12th May, if you’re available, please pick a time below. Otherwise, choose “Another Day” and I’ll follow up with you.',
     image: '',
     bgColorVar: '--color-0', // or a distinct background
     textColorVar: '--text-dark',
