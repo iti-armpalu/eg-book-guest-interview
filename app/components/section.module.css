@@ -9,7 +9,7 @@
 }
 
 .container {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -18,7 +18,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 0.2rem;
-  /* flex-wrap: wrap; */
   max-width: 100%;
 }
 
@@ -26,6 +25,13 @@
   font-size: 8rem;
   line-height: 1;
 }
+
+.sectionTotal {
+  font-size: 2rem;
+  opacity: 0.1;
+  margin-left: 0.25rem;
+  vertical-align: baseline;
+} 
 
 .sectionTitle {
   line-height: 1;
@@ -56,16 +62,9 @@
 
 .content {
   margin-top: 1rem;
-  font-size: 1.125rem;
+  font-size: 1.375rem;
   line-height: 1.2;
 }
-
-/* .calendlyEmbed {
-  margin-top: 2rem;
-  width: 100%;
-  max-width: 800px;
-  height: 400px;
-}  */
 
 .calendlyPopup {
   margin-top: 2rem;
@@ -75,15 +74,32 @@
 
 .calendlyButton {
   padding: 1rem 2rem;
-  background-color: var(--text-dark);
-  color: white;
+  background-color: var(--color-2);
+  color: var(--text-light);
   border: none;
-  font-size: 1rem;
-  border-radius: 6px;
+  font-size: 1.375rem;
+  border-radius: 50px;
+  margin-top: 2rem;
   cursor: pointer;
+  font-family: var(--font-josefinSans);
   transition: background-color 0.3s ease;
 }
 
 .calendlyButton:hover {
-  background-color: #333;
+  background-color: var(--color-3);
+}
+
+@media (max-height: 741px) {
+  .section {
+    height: auto;        /* let it grow naturally */
+    min-height: 742px;   /* optional: avoid being too tiny */
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    font-size: 1.5rem;
+  }
 }

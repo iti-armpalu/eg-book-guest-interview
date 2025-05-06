@@ -16,7 +16,7 @@ export const sections = [
     id: "02",
     title: "The J-Curve Problem",
     subheading:
-      "Why the Adoption of New Tech is Harder For the Masses.",
+      "Why the Adoption of New Tech is Harder For the Masses",
     content:
       "We all want to get better at what we do, but we don’t know how, so we try, but we don’t get it right.",
     image: "/j-curve-graph.jpg",
@@ -28,7 +28,7 @@ export const sections = [
     id: "03",
     title: "The Empathy Gradient",
     subheading:
-      "A New Way to Understand How to Adopt AI Without Anxiety.",
+      "A New Way to Understand How to Adopt AI Without Anxiety",
     content:
       "All this talk about AI taking jobs is stopping the average person from adopting the most important tech out there. We can change that with this framework.",
     image: "/empathy-gradient-graph.jpg",
@@ -51,7 +51,7 @@ export const sections = [
   {
     id: '05',
     title: 'We value your time. Choose a time that works best and we’ll handle the rest.',
-    subheading: '',
+    // title: 'I will be in Vevey with your team on the 12th, if you are available please pick a time. Otherwise, please pick "Another Day" and I will follow up with you',
     content: '',
     image: '',
     bgColorVar: '--color-0', // or a distinct background

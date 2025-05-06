@@ -12,6 +12,15 @@
   text-align: center;
 }
 
+@media (max-height: 741px) {
+  .hero{
+    height: auto;        /* let it grow naturally */
+    min-height: 742px;   /* optional: avoid being too tiny */
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
 .heroContent {
   display: flex;
   flex-direction: column;
@@ -44,7 +53,7 @@
 .info {
   display: block;
   font-size: 1rem;
-  opacity: 0.8;
+  opacity: 0.7;
   margin-top: 1rem;
 }
 
@@ -60,10 +69,10 @@
   margin-top: -25px; /* brings second arrow closer to the first */
 }
 
-/* Mobile-first media queries */
 @media (min-width: 768px) {
   .title {
     margin-top: 10rem;
   }
 }
+
 

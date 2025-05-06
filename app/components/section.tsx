@@ -20,12 +20,16 @@ export default function Section({
   image,
   isCalendly,
 }: SectionProps) {
-
   return (
     <section className={`section ${styles.section}`}>
       <div className={styles.container}>
         <div className={styles.heading}>
-          <span className={styles.sectionNumber}>{id}</span>
+          <span className={styles.sectionNumber}>
+            {id}
+            <span className={styles.sectionTotal}>
+              / 05
+            </span>
+          </span>
           <h1 className={styles.sectionTitle}>{title}</h1>
         </div>
 
