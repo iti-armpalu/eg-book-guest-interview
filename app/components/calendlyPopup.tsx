@@ -18,7 +18,7 @@ export default function CalendlyPopup() {
 
   return (
     <PopupButton
-      url={calendlyUrl}
+      url="https://calendly.com/d/cndm-qj6-p3s/dr-connock-roy-armale"
       rootElement={document.body}
       text="Book your interview slot"
       className={styles.calendlyButton}
