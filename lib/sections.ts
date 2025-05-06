@@ -52,7 +52,8 @@ export const sections = [
     id: '05',
     title: 'We value your time. Choose a time that works best and we’ll handle the rest.',
     // title: 'I will be in Vevey with your team on the 12th, if you are available please pick a time. Otherwise, please pick "Another Day" and I will follow up with you',
-    content: '',
+
+    content: 'I’ve selected 4 time slots that work for me. Each is an 8-hour window, but the interview will take no more than 2 hours. We can align on the exact time later. If none work, I’ll add more availability for the following weeks.',
     image: '',
     bgColorVar: '--color-0', // or a distinct background
     textColorVar: '--text-dark',

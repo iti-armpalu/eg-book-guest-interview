@@ -31,6 +31,7 @@ export default function Section({
             </span>
           </span>
           <h1 className={styles.sectionTitle}>{title}</h1>
+          {content && <p className={styles.content}>{content}</p>}
         </div>
 
         {isCalendly ? (
