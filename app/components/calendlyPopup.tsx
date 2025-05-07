@@ -6,7 +6,7 @@ import styles from "./section.module.css";
 
 export default function CalendlyPopup() {
   const [isClient, setIsClient] = useState(false);
-  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_GENERAL_URL ?? '';
+  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_GENERAL_URL ?? "https://calendly.com/roy-1pa/new-meeting";
 
 
   useEffect(() => {
