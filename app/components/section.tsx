@@ -7,7 +7,7 @@ interface SectionProps {
   id: string;
   title: string;
   subheading?: string;
-  content?: string;
+  content?: (string | { list: string[] })[];
   image?: string;
   isCalendly?: boolean;
 }
@@ -26,9 +26,7 @@ export default function Section({
         <div className={styles.heading}>
           <span className={styles.sectionNumber}>
             {id}
-            <span className={styles.sectionTotal}>
-              / 05
-            </span>
+            <span className={styles.sectionTotal}>/ 05</span>
           </span>
           <h1 className={styles.sectionTitle}>{title}</h1>
         </div>
@@ -52,7 +50,21 @@ export default function Section({
               </div>
             )}
             {subheading && <h3 className={styles.subheading}>{subheading}</h3>}
-            {content && <p className={styles.content}>{content}</p>}
+            {/* {content && <p className={styles.content}>{content}</p>} */}
+            {content &&
+              content.map((item, index) =>
+                typeof item === "string" ? (
+                  <p key={index} className={styles.content}>
+                    {item}
+                  </p>
+                ) : (
+                  <ul key={index} className={styles.contentList}>
+                    {item.list.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
+                )
+              )}
           </>
         )}
       </div>
