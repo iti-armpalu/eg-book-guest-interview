@@ -21,7 +21,7 @@ export default function Section({
   isCalendly,
 }: SectionProps) {
   return (
-    <section className={`${styles.section}`}>
+    <section className={`section ${styles.section}`}>
       <div className={styles.container}>
         <div className={styles.heading}>
           <span className={styles.sectionNumber}>
